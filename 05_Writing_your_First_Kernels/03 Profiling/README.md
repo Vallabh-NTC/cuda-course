@@ -7,7 +7,7 @@ nvcc -o 00 00\ nvtx_matmul.cu -lnvToolsExt
 nsys profile --stats=true ./00
 ```
 P.S. For profiling on Windows :
-- Obtain "NvToolsExt" inside C:\Program Files\NVIDIA Corporation from the Cuda 11.8 installer by choosing custom installation and then deselecting everything except "NVTX"
+- Obtain "NvToolsExt" inside "C:\Program Files\NVIDIA Corporation" from the Cuda v11.8 installer by choosing custom installation and then deselecting everything except "NVTX"
 - set env variable "INCLUDE" to "C:\Program Files\NVIDIA Corporation\NvToolsExt\include"
   and env variable "LIB" to "C:\Program Files\NVIDIA Corporation\NvToolsExt\lib\x64"
 - Go to "....\cuda-course\05_Writing_your_First_Kernels\03 Profiling" in Powershell and run 
